@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=dev#speaker-controlsice-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+				    <h1>A M.E.A.N Seminar</h1>
+				    <p>Shamar Kellman</p>
+				    <p>Computer Science Society</p>
+				</section>
+				
+				<section>
+                    <section>
+                        <h1>What is MEAN</h1>
+                        <ul>
+                            <li>MongoDB</li>
+                            <li>Expres JS</li>
+                            <li>Angular JS</li>
+                            <li>Node JS</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>A single language across your entire stack increases productivity.</h3>
+                        <aside class="notes">Starting with the database, we store information in a JSON like format. We can then write
+JSON queries on our Node server and send this directly to our front-end using Angular. This is
+especially useful when you have multiple developers working on a project together. Server-side code
+becomes more readable to front-end developers and vice versa. This makes everything a little more
+transparent and has been shown to greatly increase development time. The ease of development will
+become much more apparent once we start digging into examples and hopefully save you and your
+team some headaches in the future.</aside>
+                    </section>
+				</section>
+				<section>
+				    <section>
+				        <h1>When To Be MEAN</h1>
+				    </section>
+				    <section>
+				        <ul>
+				            <li>Chat client</li>
+				            <li>Real-time user updates (like Twitter feed)</li>
+				            <li>RSS feed</li>
+				            <li>Online shop</li>
+				            <li>Polling app</li>
+				        </ul>
+				    </section>
+				    <section>
+				        <h1>When not to be MEAN</h1>
+				    </section>
+				    <section>
+				        <h1>CPU intensive task</h1>
+				    </section>
+				</section>
+				<section>
+                    <h1>Who is being MEAN</h1>
+                    <ul>
+                        <li><a href="http://www.walmart.com/">Walmart</a> - http://www.walmart.com</li>
+                        <li><a href="http://www.yahoo.com">Yahoo</a> - http://www.yahoo.com</li>
+                        <li><a href="https://www.linkedin.com/">Linkedin</a> - https://www.linkedin.com</li>
+                        <li><a href="https://www.paypal.com/">Paypal</a> - https://www.paypal.com</li>
+                    </ul>
+                    <p>For more see - <a href="http://nodejs.org/industry/">http://nodejs.org/industry/</a></p>
+                    <aside class="notes">
+                        <p>Walmart began using Node.js in 2012. They also stated
+that 53% of their Black Friday online traffic went to their Node servers with zero
+                        downtime.</p>
+                        <p>Yahoo started experimenting with Node back in 2010. At first they just used
+it for small things like file uploads, and now they use Node to handle nearly 2 million
+requests per minute. They have noted increases in speed and a simpler development
+process.</p>
+                   <p>LinkedIn began developing the server side of their mobile app entirely with
+Node. They were previously using Ruby, but since the switch they have seen huge
+increases in performance, ranging from 2 to 10 times faster.</p>
+                   <p>PayPal has recently jumped onboard and began migrating some of their Java
+code to Node. They began experimenting with just their Account Overview page, but
+once they saw a 35% speed increase and half the amount of time spent on development,
+they started moving all sites to Node.js.</p>
+                    </aside>
+				</section>
+				<section>
+                    <section>
+                        <h1>Node JS</h1>
+                    </section>
+				    <section>
+				    	<ul>
+				    		<li>The server-side platform in your MEAN application</li>
+				    		<li>Built on Google Chrome’s V8 JavaScript runtime</li>
+				    		<li>Single Threaded</li>
+				    		<li>Asynchronous</li>
+				    		<li>Event Driven</li>
+				    	</ul>
+				    	<aside class="notes">
+				    		<p>Node uses only one thread to handle all requests. it actually works out well given the asynchronous nature of Node.</p>
+				    		<p>Asynchronous events are executed independently of the main program’s “flow”.</p>
+				    		<p>Say, for example, a database query request comes in. Depending on how large the query is, it could take a couple of seconds to return anything. Since there is only one thread, it may seem that nothing else would be able to process while the query is executing.</p>
+				    	</aside>
+				    </section>
+				    <section>
+				    	<h1>NPM Package Mananger</h1>
+				    	<aside class="notes">
+				    		<p>One of the benefits of Node is its package manager, npm17. Like Ruby has RubyGems and PHP has Composer, Node has npm. npm comes bundled with Node and will let us pull in a number of packages to fulfill our needs.</p>
+							<p>Packages can extend functionality in Node and this package system is one thing that makes Node so powerful. The ability to have a set of code that you can reuse across all your projects is incredible
+								and makes development that much easier.</p>
+							<p>Multiple packages can be brought together and intertwined to create a number of complex applications.</p>
+				    	</aside>
+				    </section>
+				    <section>
+				    	<pre><code data-trim>
+var http = require('http');
+
+var server = http.createServer(function (request, response) {
+  response.writeHead(200, {"Content-Type": "text/plain"});
+  response.end("Hello World\n");
+});
+
+server.listen(8000);
+
+console.log("Server running at http://127.0.0.1:8000/");
+						</code></pre>
+				    </section>
+				</section>
+				<section>
+                    <section>
+				        <h1>Express JS</h1>
+                    </section>
+                    <section>
+                    	<p>Express is a lightweight platform for building web apps using NodeJS.</p>
+                    	<p>a minimal and flexible node.js web application framework</p>
+                    	<aside class="notes">
+                    		<p>Express hides a lot of the inner workings of Node, which allows you to dive into your application
+code and get things up and running a lot faster. It’s fairly easy to learn and still gives you a bit of
+								flexibility with its structure. There is a reason it is currently the most popular framework for Node.</p>
+                    	</aside>
+                    </section>
+                    <section>
+                    	<pre><code data-trim>
+var express = require('express');
+var app = express();
+
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
+
+var server = app.listen(3000, function () {
+  var host = server.address().address;
+  var port = server.address().port;
+
+  console.log('Example app listening at http://%s:%s', host, port);
+});
+						</code></pre>
+                    </section>
+				</section>
+				<section>
+                    <section>
+				        <h1>MongoDB</h1>
+                    </section>
+                    <section>
+                    	<ul>
+                    		<li>Open-source NoSQL database</li>
+                    		<li>Stores documents in JSON-style format</li>
+                    		<li>Schemaless</li>
+                    		<li>Document-oriented database</li>
+                    		<li>So multiple data-types</li>
+                    	</ul>
+                    	<aside class="notes">
+                    	    <p>named from the word “humongous”</p>
+                    	    <p>you define your data structure however you want.</p>
+                    	    <p>You can easily take complex objects and insert them into your database using JSON, XML, BSON, or many other similar formats that are better suited to your application. You can even store PDF documents in certain document databases if the use case ever arises.</p>
+                    	</aside>
+                    </section>
+                    <section>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="col-sm-6">MySQL</th>
+                                    <th style="text-align:right;">MongoDB</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Table</td>
+                                    <td style="text-align:right;">Collection</td>
+                                </tr>
+                                <tr>
+                                    <td>Row</td>
+                                    <td style="text-align:right;">Document</td>
+                                </tr>
+                                <tr>
+                                    <td>Column</td>
+                                    <td style="text-align:right;">Field</td>
+                                </tr>
+                                <tr>
+                                    <td>Joins</td>
+                                    <td style="text-align:right;">Embedded documents, linking</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <pre><code data-trim>
+{
+    id: "1234",
+    name: "holly",
+    age: "400",
+    type: "high-elf",
+    address: {
+        city: "rivendell",
+        state: "middle-earth"
+    }
+}
+                       </code></pre>
+                    </section>
+                    <section>
+                        <pre><code data-trim>
+db.users.insert({ 
+	user_id: "bcd001", 
+	age: 45, 
+	status: "A"
+})
+                       </code></pre>
+                       <pre><code data-trim>
+db.users.find()
+                       </code></pre>
+                       <pre><code data-trim>
+db.users.update(
+	{ age: { $gt: 25 } },
+	{ $set: { status: "C" } },
+	{ multi: true }
+)
+                       </code></pre>
+                    </section>
+				</section>
+				<section>
+                    <section>
+				        <h1>Angular JS</h1>
+                    </section>
+                    <section>
+                        <ul>
+                            <li>Front-end framework (MVC)</li>
+                            <li>Extends HTML</li>
+                            <li>Two-way Data Binding</li>
+                            <li>Dependency Injection</li>
+                            <li>Directives &amp; Templates</li>
+                            <li>Scopes</li>
+                        </ul>
+                        <aside class="notes">
+                            <p>Angular allows you to build your normal HTML application and then extend your markup to create dynamic components. If you’ve ever made a dynamic web page without Angular, you’ve probably
+noticed some of the common complications, such as data binding, form validation, DOM event handling, and much more. Angular introduces an all-in-one solution to these problems.</p>
+                           <p>if you change data in your view (HTML files) or in your controller (JavaScript files), the data changes everywhere.</p>
+                           <p>Dependency injection is a method by which we can give an object the dependencies that it requires to run.</p>
+                        </aside>
+                    </section>
+				</section>
+				<section>
+				    <section><h1>JavaScript Primer</h1></section>
+				    <section>
+				        <h2>Variables and Data types</h2>
+				        <pre><code data-trim>
+var myVar = 0;
+                        </code></pre>
+                        <pre><code data-trim>
+var myInt = 0;
+var myFloat = 2.5;
+var myBoolean = true;
+var myString = "This is a string";
+var myArray = [1,2,3];
+var myJSONObject = {
+    myField : "Some value"
+};
+// Object instantiation using new
+var myDate = new Date();
+                        </code></pre>
+				    </section>
+				    <section>
+                        <h2>Operators</h2>
+				        <pre><code data-trim>
+var x = 4;
+x = x + 1; // x is 5
+y = x % 2; // y is 1
+x++; // x is 6
+x--; // x is 5
+x += 3; // x is 8
+var aString = "The value of x is " + x;
+                        </code></pre>
+				    </section>
+				    <section>
+                        <h2>Conditions</h2>
+				        <pre><code data-trim>
+if (x > 0) {
+    // do something
+} else {
+    // do something else
+}
+                        </code></pre>
+                        <pre><code data-trim>
+var myString = "I have " + (x == 1 ? x + "thing" : x + "things");
+                        </code></pre>   
+				    </section>
+				    <section>
+                        <h2>Loops</h2>
+				        <pre><code data-trim>
+for (var i = 0; i < myArray.length; i++) {
+    console.log(myArray[i]);
+}
+
+while (x < 10) {
+    console.log(x++);
+}
+                        </code></pre>
+				    </section>
+				    <section>
+                        <h2>Functions</h2>
+				        <pre><code data-trim>
+function myIncrementFunction (x) {
+    return x + 1;
+}
+                        </code></pre>
+                        <pre><code data-trim>
+myIncrementFunction(1000);
+                        </code></pre>
+				    </section>
+				    <section>
+                        <h2>Require (Node.js)</h2>
+				        <pre><code data-trim>
+var myLib = require("some-other-lib");
+                        </code></pre>
+				    </section>
+				</section>
+				<section>
+                    <section>
+                        <h1>Before We Build</h1>
+                    </section>
+				    <section>
+				        <img src="images/mean-design.jpeg" alt="">
+				    </section>
+				    <section>
+                        <h2>Installed Requirements</h2>
+				        <ul>
+				            <li><a href="https://nodejs.org/">NodeJS - https://nodejs.org/</a></li>
+				            <li><a href="https://www.mongodb.org/">MongoDB - https://www.mongodb.org/</a></li>
+				            <li><a href="https://www.npmjs.com/">NPM (Installed with NodeJS)</a></li>
+				            <li><a href="bower.io/">Bower (Command - npm install -g bower)</a></li>
+				            <li><a href="https://git-scm.com/">GIT - https://git-scm.com/</a></li>
+				        </ul>
+				    </section>
+				    <section>
+				        <h2>What we are using</h2>
+				        <ul>
+				            <li>express</li>
+				            <li>Mongoose</li>
+				            <li>Nodemon</li>
+				            <li>Angular</li>
+				            <li>UI-Router</li>
+				            <li>Ng-Resource</li>
+				            <li>Angular Material</li>
+				        </ul>
+				    </section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
